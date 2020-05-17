@@ -1,0 +1,72 @@
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     
+     
+     body {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+       background: hsl(219, 24%, 41%);
+     }
+     
+     
+     .slider-container {
+       width: 600px;
+       border-radius: 100px;
+       background: transparent;
+       transform: rotate(90deg);
+       border: 20px solid rgb(141, 168, 226);
+     }
+     
+     .slider {
+       -webkit-appearance: none;
+       appearance: none;
+       width: 100%;
+       height: 70px;
+       background: red;
+       outline: none;
+       opacity: .7;
+       transition: .2s;
+       border-radius: 50px;
+       margin: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+     
+     .slider-hover {
+       opacity: 1;
+     }
+     
+     
+     .slider::-webkit-slider-thumb {
+       -webkit-appearance: none;
+       appearance: none;
+       width: 70px;
+       height: 70px;
+       border-radius: 3px;
+       background: url(https://ru.seaicons.com/wp-content/uploads/2015/10/Power-3-icon.png);
+       background-size: 30px;
+       background-repeat: no-repeat;
+       background-position: center;
+       box-shadow: 0 0 10px rgb(141, 168, 226);
+       border-radius: 50%;
+       transform: rotate(-90deg);
+       cursor: pointer;
+       -webkit-filter: hue-rotate(145deg) invert(1) sepia(10%) drop-shadow(1px 0 3px yellow);
+       transition: 1s;
+       overflow:hidden;
+     }
+     
+     
+     .slider.active::-webkit-slider-thumb {
+       -webkit-filter: hue-rotate(145deg) invert(.4) sepia(10%) drop-shadow(0 0 3px green);
+     }
+     
+     
+     
+     
